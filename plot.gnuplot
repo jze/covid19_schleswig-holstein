@@ -6,12 +6,12 @@ set key left
 set timefmt "%Y-%m-%d"
 set datafile separator "\t"
 set decimalsign locale     
-set format x "%Y-%m"
+set format x "%Y-%m-%d"
 set format y "%'.0f"  
 set grid lc rgb 'white'
 set border lc rgb 'white'
 set key tc rgb 'white'
-set title 'Corvid19 Positivmeldungen in Schleswig-Holstein' tc rgb 'white'
+set title 'COVID-19 Positivmeldungen in Schleswig-Holstein' tc rgb 'white'
 
 plot 'data.csv' using 1:2 with lines lc '#e6194b' title 'Dithmarschen', \
  '' using 1:3 with lines lc '#3cb44b' title 'Flensburg', \
