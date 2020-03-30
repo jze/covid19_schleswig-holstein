@@ -6,7 +6,7 @@ set key left
 set timefmt "%Y-%m-%d"
 set datafile separator "\t"
 set decimalsign locale     
-set format x "%Y-%m-%d"
+set format x "%m-%d"
 set format y "%'.0f"  
 set grid lc rgb 'white'
 set border lc rgb 'white'
