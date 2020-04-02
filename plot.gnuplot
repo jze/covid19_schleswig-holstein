@@ -30,4 +30,6 @@ plot 'data.csv' using 1:2 with lines lc '#e6194b' title 'Dithmarschen', \
  '' using 1:16 with lines lc '#800000' title 'Stormarn'
 
 set output 'gesamt.png'
-plot 'data.csv' using 1:17 with lines lc rgb 'blue' lw 2 title 'Meldungen', 'klinische_behandlung.csv' u 1:2 with lines lc rgb 'red' lw 2 title 'in klinischer Behandlung'
+plot 'data.csv' using 1:17 with lines lc rgb 'blue' lw 2 title 'Meldungen', \
+     'klinische_behandlung.csv' u 1:2 with lines dt 2 lc rgb 'red' lw 2 title 'seit Beginn in klinischer Behandlung',\
+     '' u 1:3 with lines lc rgb 'red' lw 2 title 'aktuell in klinischer Behandlung'
